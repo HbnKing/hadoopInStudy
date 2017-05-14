@@ -74,8 +74,8 @@ public class WordCount {
      job.setReducerClass(IntSumReducer.class);
      job.setOutputKeyClass(Text.class);
      job.setOutputValueClass(IntWritable.class);
-     FileInputFormat.addInputPath(job, new Path("/wang:9000/wordcount/test.txt"));
-     FileOutputFormat.setOutputPath(job, new Path("/wang:9000/wordcount/out"));
+     FileInputFormat.addInputPath(job, new Path(args[0]));
+     FileOutputFormat.setOutputPath(job, new Path(args[1]));
  //System.exit(0);
      System.exit(job.waitForCompletion(true) ? 0 : 1);
    }
