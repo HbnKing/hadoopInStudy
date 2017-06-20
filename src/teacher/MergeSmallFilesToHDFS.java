@@ -65,6 +65,7 @@ public class MergeSmallFilesToHDFS {
 			out = fs.create(block);			
 			for (Path p : listedPaths) {
 				in = local.open(p);// 打开输入流
+				//一个输入，一个输出，第三个是缓存大小，第四个指定拷贝完毕后是否关闭流
 				IOUtils.copyBytes(in, out, 4096, false); // 复制数据，IOUtils.copyBytes可以方便地将数据写入到文件，不需要自己去控制缓冲区，也不用自己去循环读取输入源。false表示不自动关闭数据流，那么就手动关闭。
 				// 关闭输入流
 				in.close();
