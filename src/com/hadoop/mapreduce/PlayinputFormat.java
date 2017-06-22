@@ -16,7 +16,7 @@ import org.apache.hadoop.util.LineReader;
 
 //定义一个tvplayinputformat 类  来继承fileinputformat .并重写内部RecordReader 方法
 //两个重要方法  1.获取分片  2.获取key -value 对	
- class PlayinputFormat extends FileInputFormat<Text, TVplaydata>{
+public class PlayinputFormat extends FileInputFormat<Text, TVplaydata>{
 
 	@Override
 	public RecordReader<Text, TVplaydata> createRecordReader(InputSplit input, TaskAttemptContext context)
