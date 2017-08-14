@@ -12,5 +12,7 @@
 	<classpathentry kind="lib" path="D:/hadoop-2.7.3/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.3-tests.jar"/>
 	<classpathentry kind="lib" path="D:/hadoop-2.7.3/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.3.jar"/>
 	<classpathentry kind="lib" path="D:/hadoop-2.7.3/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hive_lib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hbase_lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
